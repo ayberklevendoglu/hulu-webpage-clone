@@ -1,0 +1,137 @@
+:root {
+  --color-primary: #1ce783;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background: url(../images/header-bg.jpg) no-repeat center center/cover;
+  height: 78vh;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+a {
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-offer {
+  width: 100%;
+  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.btn-offer:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+/* navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+nav img {
+  width: 70px;
+}
+nav button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.8;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+nav button:hover {
+  opacity: 1;
+  background: #333;
+  transition: all 0.3s ease;
+}
+
+/* header content */
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: fit-content;
+  margin-top: 100px;
+}
+.header-content .header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.offers-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+.offer {
+  height: 240px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.offer h5 {
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.offer p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.offer img {
+  width: 100%;
+  height: 65px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.header-container .price {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-container .price div {
+  font-size: 0.7rem;
+  margin-right: 1rem;
+}
+.header-link-1 {
+  margin: 2rem 0;
+  font-size: 0.9rem;
+}
+.header-link-2 {
+  font-size: 1.1rem;
+}
+.header-link-2:hover {
+  color: #c3c3c3;
+  transition: all 0.3s ease;
+}
